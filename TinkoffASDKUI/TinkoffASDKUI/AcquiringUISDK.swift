@@ -238,10 +238,14 @@ public class AcquiringUISDK: NSObject {
         
         acquiringView?.onTouchButtonSBP = { [weak self] viewController in
             guard let self = self else { return }
+
             if let paymentId = self.paymentInitResponseData?.paymentId {
-                let urlSBPViewController = self.urlSBPPaymentViewController(paymentSource: .paymentId(paymentId),
-                                                                            configuration: configuration,
-                                                                            completionHandler: completionHandler)
+                let urlSBPViewController = self.urlSBPPaymentViewController(
+                    paymentSource: .paymentId(paymentId),
+                    configuration: configuration,
+                    completionHandler: completionHandler
+                )
+
                 viewController.present(urlSBPViewController, animated: true, completion: nil)
             }
         }
@@ -381,7 +385,7 @@ public class AcquiringUISDK: NSObject {
 
     public func urlSBPPaymentViewController(paymentSource: PaymentSource,
                                             configuration: AcquiringViewConfiguration,
-                                            completionHandler: PaymentCompletionHandler? = nil) -> UIViewController {
+                                            completionHandler: PaymentCompletionHandler?) -> UIViewController {
         let urlPaymentViewController = sbpAssembly.urlPaymentViewController(paymentSource: paymentSource,
                                                                             configuration: configuration,
                                                                             completionHandler: completionHandler)

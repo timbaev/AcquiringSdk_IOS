@@ -85,7 +85,6 @@
 		2CCEF0A723C88C6C00CD3D44 /* CenterFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCEF0A623C88C6C00CD3D44 /* CenterFlowLayout.swift */; };
 		2CCEF0AB23C8A6DB00CD3D44 /* UICollectionReusableViewEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCEF0A923C8A6DB00CD3D44 /* UICollectionReusableViewEmpty.swift */; };
 		2CCEF0AC23C8A6DB00CD3D44 /* UICollectionReusableViewEmpty.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CCEF0AA23C8A6DB00CD3D44 /* UICollectionReusableViewEmpty.xib */; };
-		2CCF3D9C2444C3B7004317AC /* Extension+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCF3D9B2444C3B7004317AC /* Extension+UIColor.swift */; };
 		2CDD56C9246A8EC9005AB1B2 /* LabelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDD56C7246A8EC9005AB1B2 /* LabelTableViewCell.swift */; };
 		2CDD56CA246A8EC9005AB1B2 /* LabelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CDD56C8246A8EC9005AB1B2 /* LabelTableViewCell.xib */; };
 		2CE8E62D24485C970085FA82 /* ResistanceSpaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE8E62B24485C970085FA82 /* ResistanceSpaceTableViewCell.swift */; };
@@ -100,6 +99,55 @@
 		2CFF6FC523C8BED600CF5E38 /* CardListStatusCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFF6FC323C8BED600CF5E38 /* CardListStatusCollectionViewCell.swift */; };
 		2CFF6FC623C8BED600CF5E38 /* CardListStatusCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CFF6FC423C8BED600CF5E38 /* CardListStatusCollectionViewCell.xib */; };
 		2CFF6FC723C8C2EB00CF5E38 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2CFF6FC923C8C2EB00CF5E38 /* Localizable.strings */; };
+		8E8FCBCA279C027200EC83EC /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FCBC9279C027200EC83EC /* Style.swift */; };
+		8E8FCBCE279C029F00EC83EC /* Extension+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FCBCC279C029F00EC83EC /* Extension+UIColor.swift */; };
+		8E8FCBCF279C029F00EC83EC /* UIColor+Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FCBCD279C029F00EC83EC /* UIColor+Dynamic.swift */; };
+		8E8FCBD1279C02C200EC83EC /* UIViewController+Dismiss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FCBD0279C02C200EC83EC /* UIViewController+Dismiss.swift */; };
+		8E8FCBEE279C02EE00EC83EC /* SBPAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FCBD3279C02EE00EC83EC /* SBPAssembly.swift */; };
+		8E8FCBEF279C02EE00EC83EC /* UINavigationBar+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FCBD4279C02EE00EC83EC /* UINavigationBar+Style.swift */; };
+		8E8FCBF0279C02EE00EC83EC /* SBPNoAvailableBanksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FCBD7279C02EE00EC83EC /* SBPNoAvailableBanksViewController.swift */; };
+		8E8FCBF1279C02EE00EC83EC /* SBPNoAvailableBanksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FCBD8279C02EE00EC83EC /* SBPNoAvailableBanksView.swift */; };
+		8E8FCBF2279C02EE00EC83EC /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FCBDA279C02EE00EC83EC /* LoadingViewController.swift */; };
+		8E8FCBF3279C02EE00EC83EC /* SBPBankListTableManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FCBDC279C02EE00EC83EC /* SBPBankListTableManager.swift */; };
+		8E8FCBF4279C02EE00EC83EC /* SBPBankListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FCBDD279C02EE00EC83EC /* SBPBankListViewController.swift */; };
+		8E8FCBF5279C02EE00EC83EC /* SBPBankListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FCBDF279C02EE00EC83EC /* SBPBankListView.swift */; };
+		8E8FCBF6279C02EE00EC83EC /* SBPBankCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FCBE0279C02EE00EC83EC /* SBPBankCell.swift */; };
+		8E8FCBF7279C02EE00EC83EC /* SBPBankListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FCBE1279C02EE00EC83EC /* SBPBankListHeaderView.swift */; };
+		8E8FCBF8279C02EE00EC83EC /* SBPUrlPaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FCBE3279C02EE00EC83EC /* SBPUrlPaymentView.swift */; };
+		8E8FCBF9279C02EE00EC83EC /* SBPUrlPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FCBE4279C02EE00EC83EC /* SBPUrlPaymentViewController.swift */; };
+		8E8FCBFA279C02EE00EC83EC /* SBPPaymentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FCBE6279C02EE00EC83EC /* SBPPaymentService.swift */; };
+		8E8FCBFB279C02EE00EC83EC /* SBPBanksService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FCBE7279C02EE00EC83EC /* SBPBanksService.swift */; };
+		8E8FCBFC279C02EE00EC83EC /* SBPApplicationOpener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FCBE8279C02EE00EC83EC /* SBPApplicationOpener.swift */; };
+		8E8FCBFD279C02EE00EC83EC /* URLOpener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FCBE9279C02EE00EC83EC /* URLOpener.swift */; };
+		8E8FCBFE279C02EE00EC83EC /* SBPBankAppAvailabilityChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FCBEA279C02EE00EC83EC /* SBPBankAppAvailabilityChecker.swift */; };
+		8E8FCBFF279C02EE00EC83EC /* BigButtonContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FCBEC279C02EE00EC83EC /* BigButtonContainer.swift */; };
+		8E8FCC00279C02EE00EC83EC /* BigButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FCBED279C02EE00EC83EC /* BigButton.swift */; };
+		8E8FCC0E279C031000EC83EC /* BundleImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FCC02279C030F00EC83EC /* BundleImageProvider.swift */; };
+		8E8FCC0F279C031000EC83EC /* tinkoff_40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E8FCC05279C030F00EC83EC /* tinkoff_40@2x.png */; };
+		8E8FCC10279C031000EC83EC /* tinkoff_40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E8FCC06279C030F00EC83EC /* tinkoff_40@3x.png */; };
+		8E8FCC11279C031000EC83EC /* RoundImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FCC08279C030F00EC83EC /* RoundImageProcessor.swift */; };
+		8E8FCC12279C031000EC83EC /* SizeImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FCC09279C030F00EC83EC /* SizeImageProcessor.swift */; };
+		8E8FCC13279C031000EC83EC /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FCC0A279C031000EC83EC /* ImageProcessor.swift */; };
+		8E8FCC14279C031000EC83EC /* CellImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FCC0C279C031000EC83EC /* CellImageLoader.swift */; };
+		8E8FCC15279C031000EC83EC /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FCC0D279C031000EC83EC /* ImageLoader.swift */; };
+		8E8FCC29279C04FE00EC83EC /* PullableContainerDragHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FCC18279C04FE00EC83EC /* PullableContainerDragHandler.swift */; };
+		8E8FCC2A279C04FE00EC83EC /* PullableContainerDragController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FCC19279C04FE00EC83EC /* PullableContainerDragController.swift */; };
+		8E8FCC2B279C04FE00EC83EC /* PullableContainerScrollDragHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FCC1A279C04FE00EC83EC /* PullableContainerScrollDragHandler.swift */; };
+		8E8FCC2C279C04FE00EC83EC /* PullableContainerPanGestureDragHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FCC1B279C04FE00EC83EC /* PullableContainerPanGestureDragHandler.swift */; };
+		8E8FCC2D279C04FE00EC83EC /* PullableContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FCC1D279C04FE00EC83EC /* PullableContainerViewController.swift */; };
+		8E8FCC2E279C04FE00EC83EC /* PullableContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FCC1F279C04FE00EC83EC /* PullableContainerView.swift */; };
+		8E8FCC2F279C04FE00EC83EC /* PullableContainerHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FCC20279C04FE00EC83EC /* PullableContainerHeader.swift */; };
+		8E8FCC30279C04FE00EC83EC /* PassthroughView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FCC21279C04FE00EC83EC /* PassthroughView.swift */; };
+		8E8FCC31279C04FE00EC83EC /* NotchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FCC22279C04FE00EC83EC /* NotchView.swift */; };
+		8E8FCC32279C04FE00EC83EC /* DimmingPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FCC24279C04FE00EC83EC /* DimmingPresentationController.swift */; };
+		8E8FCC33279C04FE00EC83EC /* DimmingTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FCC25279C04FE00EC83EC /* DimmingTransitioningDelegate.swift */; };
+		8E8FCC34279C04FE00EC83EC /* DimmingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FCC26279C04FE00EC83EC /* DimmingView.swift */; };
+		8E8FCC35279C04FE00EC83EC /* PullableContainerContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FCC28279C04FE00EC83EC /* PullableContainerContent.swift */; };
+		8E8FCC38279C051400EC83EC /* CustomViewLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FCC37279C051400EC83EC /* CustomViewLoadable.swift */; };
+		8E8FCC3B279C052B00EC83EC /* PaymentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FCC3A279C052B00EC83EC /* PaymentService.swift */; };
+		8E8FCC3E279C059400EC83EC /* ReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FCC3D279C059400EC83EC /* ReusableCell.swift */; };
+		8E8FCC42279C05D900EC83EC /* UIViewController+TopPresented.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FCC40279C05D900EC83EC /* UIViewController+TopPresented.swift */; };
+		8E8FCC43279C05D900EC83EC /* Bundle+TinkoffASDKUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FCC41279C05D900EC83EC /* Bundle+TinkoffASDKUI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -215,7 +263,6 @@
 		2CCEF0A623C88C6C00CD3D44 /* CenterFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterFlowLayout.swift; sourceTree = "<group>"; };
 		2CCEF0A923C8A6DB00CD3D44 /* UICollectionReusableViewEmpty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionReusableViewEmpty.swift; sourceTree = "<group>"; };
 		2CCEF0AA23C8A6DB00CD3D44 /* UICollectionReusableViewEmpty.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UICollectionReusableViewEmpty.xib; sourceTree = "<group>"; };
-		2CCF3D9B2444C3B7004317AC /* Extension+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIColor.swift"; sourceTree = "<group>"; };
 		2CDD56C7246A8EC9005AB1B2 /* LabelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelTableViewCell.swift; sourceTree = "<group>"; };
 		2CDD56C8246A8EC9005AB1B2 /* LabelTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelTableViewCell.xib; sourceTree = "<group>"; };
 		2CE8E62B24485C970085FA82 /* ResistanceSpaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResistanceSpaceTableViewCell.swift; sourceTree = "<group>"; };
@@ -232,6 +279,55 @@
 		2CFF6FC423C8BED600CF5E38 /* CardListStatusCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardListStatusCollectionViewCell.xib; sourceTree = "<group>"; };
 		2CFF6FC823C8C2EB00CF5E38 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2CFF6FCA23C8C30800CF5E38 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8E8FCBC9279C027200EC83EC /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		8E8FCBCC279C029F00EC83EC /* Extension+UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+UIColor.swift"; sourceTree = "<group>"; };
+		8E8FCBCD279C029F00EC83EC /* UIColor+Dynamic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Dynamic.swift"; sourceTree = "<group>"; };
+		8E8FCBD0279C02C200EC83EC /* UIViewController+Dismiss.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Dismiss.swift"; sourceTree = "<group>"; };
+		8E8FCBD3279C02EE00EC83EC /* SBPAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBPAssembly.swift; sourceTree = "<group>"; };
+		8E8FCBD4279C02EE00EC83EC /* UINavigationBar+Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+Style.swift"; sourceTree = "<group>"; };
+		8E8FCBD7279C02EE00EC83EC /* SBPNoAvailableBanksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBPNoAvailableBanksViewController.swift; sourceTree = "<group>"; };
+		8E8FCBD8279C02EE00EC83EC /* SBPNoAvailableBanksView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBPNoAvailableBanksView.swift; sourceTree = "<group>"; };
+		8E8FCBDA279C02EE00EC83EC /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		8E8FCBDC279C02EE00EC83EC /* SBPBankListTableManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBPBankListTableManager.swift; sourceTree = "<group>"; };
+		8E8FCBDD279C02EE00EC83EC /* SBPBankListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBPBankListViewController.swift; sourceTree = "<group>"; };
+		8E8FCBDF279C02EE00EC83EC /* SBPBankListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBPBankListView.swift; sourceTree = "<group>"; };
+		8E8FCBE0279C02EE00EC83EC /* SBPBankCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBPBankCell.swift; sourceTree = "<group>"; };
+		8E8FCBE1279C02EE00EC83EC /* SBPBankListHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBPBankListHeaderView.swift; sourceTree = "<group>"; };
+		8E8FCBE3279C02EE00EC83EC /* SBPUrlPaymentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBPUrlPaymentView.swift; sourceTree = "<group>"; };
+		8E8FCBE4279C02EE00EC83EC /* SBPUrlPaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBPUrlPaymentViewController.swift; sourceTree = "<group>"; };
+		8E8FCBE6279C02EE00EC83EC /* SBPPaymentService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBPPaymentService.swift; sourceTree = "<group>"; };
+		8E8FCBE7279C02EE00EC83EC /* SBPBanksService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBPBanksService.swift; sourceTree = "<group>"; };
+		8E8FCBE8279C02EE00EC83EC /* SBPApplicationOpener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBPApplicationOpener.swift; sourceTree = "<group>"; };
+		8E8FCBE9279C02EE00EC83EC /* URLOpener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLOpener.swift; sourceTree = "<group>"; };
+		8E8FCBEA279C02EE00EC83EC /* SBPBankAppAvailabilityChecker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBPBankAppAvailabilityChecker.swift; sourceTree = "<group>"; };
+		8E8FCBEC279C02EE00EC83EC /* BigButtonContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BigButtonContainer.swift; sourceTree = "<group>"; };
+		8E8FCBED279C02EE00EC83EC /* BigButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BigButton.swift; sourceTree = "<group>"; };
+		8E8FCC02279C030F00EC83EC /* BundleImageProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BundleImageProvider.swift; sourceTree = "<group>"; };
+		8E8FCC05279C030F00EC83EC /* tinkoff_40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tinkoff_40@2x.png"; sourceTree = "<group>"; };
+		8E8FCC06279C030F00EC83EC /* tinkoff_40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tinkoff_40@3x.png"; sourceTree = "<group>"; };
+		8E8FCC08279C030F00EC83EC /* RoundImageProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundImageProcessor.swift; sourceTree = "<group>"; };
+		8E8FCC09279C030F00EC83EC /* SizeImageProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizeImageProcessor.swift; sourceTree = "<group>"; };
+		8E8FCC0A279C031000EC83EC /* ImageProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageProcessor.swift; sourceTree = "<group>"; };
+		8E8FCC0C279C031000EC83EC /* CellImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellImageLoader.swift; sourceTree = "<group>"; };
+		8E8FCC0D279C031000EC83EC /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		8E8FCC18279C04FE00EC83EC /* PullableContainerDragHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullableContainerDragHandler.swift; sourceTree = "<group>"; };
+		8E8FCC19279C04FE00EC83EC /* PullableContainerDragController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullableContainerDragController.swift; sourceTree = "<group>"; };
+		8E8FCC1A279C04FE00EC83EC /* PullableContainerScrollDragHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullableContainerScrollDragHandler.swift; sourceTree = "<group>"; };
+		8E8FCC1B279C04FE00EC83EC /* PullableContainerPanGestureDragHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullableContainerPanGestureDragHandler.swift; sourceTree = "<group>"; };
+		8E8FCC1D279C04FE00EC83EC /* PullableContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullableContainerViewController.swift; sourceTree = "<group>"; };
+		8E8FCC1F279C04FE00EC83EC /* PullableContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullableContainerView.swift; sourceTree = "<group>"; };
+		8E8FCC20279C04FE00EC83EC /* PullableContainerHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullableContainerHeader.swift; sourceTree = "<group>"; };
+		8E8FCC21279C04FE00EC83EC /* PassthroughView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassthroughView.swift; sourceTree = "<group>"; };
+		8E8FCC22279C04FE00EC83EC /* NotchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotchView.swift; sourceTree = "<group>"; };
+		8E8FCC24279C04FE00EC83EC /* DimmingPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DimmingPresentationController.swift; sourceTree = "<group>"; };
+		8E8FCC25279C04FE00EC83EC /* DimmingTransitioningDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DimmingTransitioningDelegate.swift; sourceTree = "<group>"; };
+		8E8FCC26279C04FE00EC83EC /* DimmingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DimmingView.swift; sourceTree = "<group>"; };
+		8E8FCC28279C04FE00EC83EC /* PullableContainerContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullableContainerContent.swift; sourceTree = "<group>"; };
+		8E8FCC37279C051400EC83EC /* CustomViewLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViewLoadable.swift; sourceTree = "<group>"; };
+		8E8FCC3A279C052B00EC83EC /* PaymentService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentService.swift; sourceTree = "<group>"; };
+		8E8FCC3D279C059400EC83EC /* ReusableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableCell.swift; sourceTree = "<group>"; };
+		8E8FCC40279C05D900EC83EC /* UIViewController+TopPresented.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+TopPresented.swift"; sourceTree = "<group>"; };
+		8E8FCC41279C05D900EC83EC /* Bundle+TinkoffASDKUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+TinkoffASDKUI.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -365,15 +461,24 @@
 		2C9C7E9A239FBB6700DE4071 /* TinkoffASDKUI */ = {
 			isa = PBXGroup;
 			children = (
+				8E8FCC36279C051400EC83EC /* Protocols */,
 				2C92C68924C0549100A7E50F /* AlertView */,
 				2C46840524726AD00067DA48 /* InputEmail */,
+				8E8FCBCB279C029F00EC83EC /* Colors */,
+				8E8FCC3C279C059400EC83EC /* Cells */,
 				2CB1C1312459948800CCDA5E /* Extension */,
+				8E8FCC3F279C05D900EC83EC /* Extensions */,
+				8E8FCBD2279C02EE00EC83EC /* SBP */,
 				2C73726023D08628005584EB /* InputAccessoryView */,
 				2C193C54243DE5F400058DDC /* SavedCards */,
 				2CFF6FCB23C8C7A600CF5E38 /* CollectionViewFlowLayout */,
+				8E8FCC01279C030F00EC83EC /* Images */,
 				2CCEF0A823C8A6C900CD3D44 /* CollectionReusableView */,
 				2CB0985423CC9BD800EE13A7 /* CollectionViewCell */,
+				8E8FCBC8279C027200EC83EC /* Style */,
 				2C572D0923B38F82004B4619 /* TableViewCells */,
+				8E8FCC39279C052B00EC83EC /* Services */,
+				8E8FCC16279C04FE00EC83EC /* PullableContainer */,
 				2C99F84123D7255B0046552B /* PullUpController */,
 				2C83804F23AA4BC300BEA31E /* AcquiringUISDK.swift */,
 				2C9C7EF4239FEFE300DE4071 /* AcquiringPaymentViewController.swift */,
@@ -385,6 +490,7 @@
 				2C9C7EEF239FCD2A00DE4071 /* WebViewController.xib */,
 				2CFE99BC247550740077AAB4 /* RandomAmounCheckingViewController.swift */,
 				2CFE99BD247550740077AAB4 /* RandomAmounCheckingViewController.xib */,
+				8E8FCBD0279C02C200EC83EC /* UIViewController+Dismiss.swift */,
 				2C193C55243E192C00058DDC /* QRCodeViewController.swift */,
 				2C193C56243E192C00058DDC /* QRCodeViewController.xib */,
 				2CB0985223CC78A400EE13A7 /* Assets.xcassets */,
@@ -449,9 +555,8 @@
 			isa = PBXGroup;
 			children = (
 				2C26CA1D243F096C00D78842 /* Extension+UIImage.swift */,
-				2CCF3D9B2444C3B7004317AC /* Extension+UIColor.swift */,
-				2C3B2F14245860D700E7C421 /* Extension+UIView.swift */,
 				2CB1C1322459950C00CCDA5E /* Extension+UITableView.swift */,
+				2C3B2F14245860D700E7C421 /* Extension+UIView.swift */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -493,6 +598,254 @@
 				2CCEF0A623C88C6C00CD3D44 /* CenterFlowLayout.swift */,
 			);
 			name = CollectionViewFlowLayout;
+			sourceTree = "<group>";
+		};
+		8E8FCBC8279C027200EC83EC /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				8E8FCBC9279C027200EC83EC /* Style.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		8E8FCBCB279C029F00EC83EC /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				8E8FCBCC279C029F00EC83EC /* Extension+UIColor.swift */,
+				8E8FCBCD279C029F00EC83EC /* UIColor+Dynamic.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		8E8FCBD2279C02EE00EC83EC /* SBP */ = {
+			isa = PBXGroup;
+			children = (
+				8E8FCBD3279C02EE00EC83EC /* SBPAssembly.swift */,
+				8E8FCBD4279C02EE00EC83EC /* UINavigationBar+Style.swift */,
+				8E8FCBD5279C02EE00EC83EC /* Modules */,
+				8E8FCBEB279C02EE00EC83EC /* Views */,
+			);
+			path = SBP;
+			sourceTree = "<group>";
+		};
+		8E8FCBD5279C02EE00EC83EC /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				8E8FCBD6279C02EE00EC83EC /* SBPNoAvailableBanks */,
+				8E8FCBD9279C02EE00EC83EC /* Loading */,
+				8E8FCBDB279C02EE00EC83EC /* BankList */,
+				8E8FCBE2279C02EE00EC83EC /* SBPUrlPayment */,
+				8E8FCBE5279C02EE00EC83EC /* Services */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		8E8FCBD6279C02EE00EC83EC /* SBPNoAvailableBanks */ = {
+			isa = PBXGroup;
+			children = (
+				8E8FCBD7279C02EE00EC83EC /* SBPNoAvailableBanksViewController.swift */,
+				8E8FCBD8279C02EE00EC83EC /* SBPNoAvailableBanksView.swift */,
+			);
+			path = SBPNoAvailableBanks;
+			sourceTree = "<group>";
+		};
+		8E8FCBD9279C02EE00EC83EC /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				8E8FCBDA279C02EE00EC83EC /* LoadingViewController.swift */,
+			);
+			path = Loading;
+			sourceTree = "<group>";
+		};
+		8E8FCBDB279C02EE00EC83EC /* BankList */ = {
+			isa = PBXGroup;
+			children = (
+				8E8FCBDC279C02EE00EC83EC /* SBPBankListTableManager.swift */,
+				8E8FCBDD279C02EE00EC83EC /* SBPBankListViewController.swift */,
+				8E8FCBDE279C02EE00EC83EC /* Views */,
+			);
+			path = BankList;
+			sourceTree = "<group>";
+		};
+		8E8FCBDE279C02EE00EC83EC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8E8FCBDF279C02EE00EC83EC /* SBPBankListView.swift */,
+				8E8FCBE0279C02EE00EC83EC /* SBPBankCell.swift */,
+				8E8FCBE1279C02EE00EC83EC /* SBPBankListHeaderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8E8FCBE2279C02EE00EC83EC /* SBPUrlPayment */ = {
+			isa = PBXGroup;
+			children = (
+				8E8FCBE3279C02EE00EC83EC /* SBPUrlPaymentView.swift */,
+				8E8FCBE4279C02EE00EC83EC /* SBPUrlPaymentViewController.swift */,
+			);
+			path = SBPUrlPayment;
+			sourceTree = "<group>";
+		};
+		8E8FCBE5279C02EE00EC83EC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8E8FCBE6279C02EE00EC83EC /* SBPPaymentService.swift */,
+				8E8FCBE7279C02EE00EC83EC /* SBPBanksService.swift */,
+				8E8FCBE8279C02EE00EC83EC /* SBPApplicationOpener.swift */,
+				8E8FCBE9279C02EE00EC83EC /* URLOpener.swift */,
+				8E8FCBEA279C02EE00EC83EC /* SBPBankAppAvailabilityChecker.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8E8FCBEB279C02EE00EC83EC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8E8FCBEC279C02EE00EC83EC /* BigButtonContainer.swift */,
+				8E8FCBED279C02EE00EC83EC /* BigButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8E8FCC01279C030F00EC83EC /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				8E8FCC02279C030F00EC83EC /* BundleImageProvider.swift */,
+				8E8FCC03279C030F00EC83EC /* Images */,
+				8E8FCC07279C030F00EC83EC /* Processors */,
+				8E8FCC0B279C031000EC83EC /* Loaders */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		8E8FCC03279C030F00EC83EC /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				8E8FCC04279C030F00EC83EC /* tinkoff_40 */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		8E8FCC04279C030F00EC83EC /* tinkoff_40 */ = {
+			isa = PBXGroup;
+			children = (
+				8E8FCC05279C030F00EC83EC /* tinkoff_40@2x.png */,
+				8E8FCC06279C030F00EC83EC /* tinkoff_40@3x.png */,
+			);
+			path = tinkoff_40;
+			sourceTree = "<group>";
+		};
+		8E8FCC07279C030F00EC83EC /* Processors */ = {
+			isa = PBXGroup;
+			children = (
+				8E8FCC08279C030F00EC83EC /* RoundImageProcessor.swift */,
+				8E8FCC09279C030F00EC83EC /* SizeImageProcessor.swift */,
+				8E8FCC0A279C031000EC83EC /* ImageProcessor.swift */,
+			);
+			path = Processors;
+			sourceTree = "<group>";
+		};
+		8E8FCC0B279C031000EC83EC /* Loaders */ = {
+			isa = PBXGroup;
+			children = (
+				8E8FCC0C279C031000EC83EC /* CellImageLoader.swift */,
+				8E8FCC0D279C031000EC83EC /* ImageLoader.swift */,
+			);
+			path = Loaders;
+			sourceTree = "<group>";
+		};
+		8E8FCC16279C04FE00EC83EC /* PullableContainer */ = {
+			isa = PBXGroup;
+			children = (
+				8E8FCC17279C04FE00EC83EC /* Translation */,
+				8E8FCC1C279C04FE00EC83EC /* ViewControllers */,
+				8E8FCC1E279C04FE00EC83EC /* Views */,
+				8E8FCC23279C04FE00EC83EC /* Presentation */,
+				8E8FCC27279C04FE00EC83EC /* Interfaces */,
+			);
+			path = PullableContainer;
+			sourceTree = "<group>";
+		};
+		8E8FCC17279C04FE00EC83EC /* Translation */ = {
+			isa = PBXGroup;
+			children = (
+				8E8FCC18279C04FE00EC83EC /* PullableContainerDragHandler.swift */,
+				8E8FCC19279C04FE00EC83EC /* PullableContainerDragController.swift */,
+				8E8FCC1A279C04FE00EC83EC /* PullableContainerScrollDragHandler.swift */,
+				8E8FCC1B279C04FE00EC83EC /* PullableContainerPanGestureDragHandler.swift */,
+			);
+			path = Translation;
+			sourceTree = "<group>";
+		};
+		8E8FCC1C279C04FE00EC83EC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8E8FCC1D279C04FE00EC83EC /* PullableContainerViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8E8FCC1E279C04FE00EC83EC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8E8FCC1F279C04FE00EC83EC /* PullableContainerView.swift */,
+				8E8FCC20279C04FE00EC83EC /* PullableContainerHeader.swift */,
+				8E8FCC21279C04FE00EC83EC /* PassthroughView.swift */,
+				8E8FCC22279C04FE00EC83EC /* NotchView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8E8FCC23279C04FE00EC83EC /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				8E8FCC24279C04FE00EC83EC /* DimmingPresentationController.swift */,
+				8E8FCC25279C04FE00EC83EC /* DimmingTransitioningDelegate.swift */,
+				8E8FCC26279C04FE00EC83EC /* DimmingView.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		8E8FCC27279C04FE00EC83EC /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				8E8FCC28279C04FE00EC83EC /* PullableContainerContent.swift */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		8E8FCC36279C051400EC83EC /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				8E8FCC37279C051400EC83EC /* CustomViewLoadable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		8E8FCC39279C052B00EC83EC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8E8FCC3A279C052B00EC83EC /* PaymentService.swift */,
+			);
+			name = Services;
+			path = TinkoffASDKUI/Services;
+			sourceTree = SOURCE_ROOT;
+		};
+		8E8FCC3C279C059400EC83EC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8E8FCC3D279C059400EC83EC /* ReusableCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		8E8FCC3F279C05D900EC83EC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8E8FCC40279C05D900EC83EC /* UIViewController+TopPresented.swift */,
+				8E8FCC41279C05D900EC83EC /* Bundle+TinkoffASDKUI.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -615,6 +968,7 @@
 			files = (
 				2C572D1323B39066004B4619 /* AmountTableViewCell.xib in Resources */,
 				2CCEF0AC23C8A6DB00CD3D44 /* UICollectionReusableViewEmpty.xib in Resources */,
+				8E8FCC0F279C031000EC83EC /* tinkoff_40@2x.png in Resources */,
 				2C572D1623B39066004B4619 /* ButtonTableViewCell.xib in Resources */,
 				2C193C5C243E206A00058DDC /* QRCodeImageTableViewCell.xib in Resources */,
 				2CB4A48F244DB76F005E1469 /* QRCodeWebTableViewCell.xib in Resources */,
@@ -626,6 +980,7 @@
 				2CCEF0A223C871AD00CD3D44 /* PaymentCardCollectionViewCell.xib in Resources */,
 				2CB0985823CC9C1300EE13A7 /* PaymentCardInputRequisitesCollectionViewCell.xib in Resources */,
 				2C193C58243E192C00058DDC /* QRCodeViewController.xib in Resources */,
+				8E8FCC10279C031000EC83EC /* tinkoff_40@3x.png in Resources */,
 				2CFF6FC123C8BC3700CF5E38 /* LoadingCollectionViewCell.xib in Resources */,
 				2C73726523D0868E005584EB /* ButtonInputAccessoryView.xib in Resources */,
 				2C193C60243E216D00058DDC /* StatusTableViewCell.xib in Resources */,
@@ -662,62 +1017,108 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CB0983F23CC520E00EE13A7 /* InputMask.swift in Sources */,
+				8E8FCBCA279C027200EC83EC /* Style.swift in Sources */,
 				2CFF6FC023C8BC3700CF5E38 /* LoadingCollectionViewCell.swift in Sources */,
 				2CB1C1332459950C00CCDA5E /* Extension+UITableView.swift in Sources */,
 				2C3B2F15245860D700E7C421 /* Extension+UIView.swift in Sources */,
 				2C193C51243DB31600058DDC /* SBPCollectionViewCell.swift in Sources */,
 				2C4695742437686A00DBB3E7 /* PageStatusCollectionViewCell.swift in Sources */,
 				2CB5EE4B2445CDF800A76E84 /* CardsViewController.swift in Sources */,
+				8E8FCC00279C02EE00EC83EC /* BigButton.swift in Sources */,
 				2CB0984123CC520E00EE13A7 /* InputState.swift in Sources */,
+				8E8FCC14279C031000EC83EC /* CellImageLoader.swift in Sources */,
 				2CB765132451CF0500654795 /* InpuCardtRequisitesTableViewCell.swift in Sources */,
 				2CDD56C9246A8EC9005AB1B2 /* LabelTableViewCell.swift in Sources */,
-				2CCF3D9C2444C3B7004317AC /* Extension+UIColor.swift in Sources */,
+				8E8FCBF8279C02EE00EC83EC /* SBPUrlPaymentView.swift in Sources */,
 				2C9C7EF7239FEFE300DE4071 /* AcquiringPaymentViewController.swift in Sources */,
 				2C469571243747E700DBB3E7 /* CardListPresenter.swift in Sources */,
 				2CE8E62D24485C970085FA82 /* ResistanceSpaceTableViewCell.swift in Sources */,
+				8E8FCBFC279C02EE00EC83EC /* SBPApplicationOpener.swift in Sources */,
+				8E8FCC11279C031000EC83EC /* RoundImageProcessor.swift in Sources */,
 				2CFF6FC523C8BED600CF5E38 /* CardListStatusCollectionViewCell.swift in Sources */,
+				8E8FCC33279C04FE00EC83EC /* DimmingTransitioningDelegate.swift in Sources */,
+				8E8FCC38279C051400EC83EC /* CustomViewLoadable.swift in Sources */,
 				2CB0984623CC520E00EE13A7 /* FreeState.swift in Sources */,
 				2C92C68D24C056F000A7E50F /* AcquiringAlertViewController.swift in Sources */,
 				2CFE99BE247550740077AAB4 /* RandomAmounCheckingViewController.swift in Sources */,
+				8E8FCBFD279C02EE00EC83EC /* URLOpener.swift in Sources */,
 				2CB0984423CC520E00EE13A7 /* NSCharacterSet.swift in Sources */,
+				8E8FCC2E279C04FE00EC83EC /* PullableContainerView.swift in Sources */,
+				8E8FCBF0279C02EE00EC83EC /* SBPNoAvailableBanksViewController.swift in Sources */,
 				2CB0983B23CC520E00EE13A7 /* Next.swift in Sources */,
 				2CB4A48E244DB76F005E1469 /* QRCodeWebTableViewCell.swift in Sources */,
+				8E8FCC15279C031000EC83EC /* ImageLoader.swift in Sources */,
+				8E8FCBEF279C02EE00EC83EC /* UINavigationBar+Style.swift in Sources */,
+				8E8FCC2A279C04FE00EC83EC /* PullableContainerDragController.swift in Sources */,
 				2CB0985723CC9C1300EE13A7 /* PaymentCardInputRequisitesCollectionViewCell.swift in Sources */,
 				2CE934AA24460271006A4328 /* PaymentCardTableViewCell.swift in Sources */,
 				2CCEF0AB23C8A6DB00CD3D44 /* UICollectionReusableViewEmpty.swift in Sources */,
 				2C193C5B243E206A00058DDC /* QRCodeImageTableViewCell.swift in Sources */,
+				8E8FCC0E279C031000EC83EC /* BundleImageProvider.swift in Sources */,
 				2C9B0D1523CDB150000B5F70 /* InputCardRequisitesController.swift in Sources */,
 				2C26CA1F243F096C00D78842 /* Extension+UIImage.swift in Sources */,
 				2C468402247261630067DA48 /* TextFieldTableViewCell.swift in Sources */,
 				2CB0984523CC520E00EE13A7 /* MaskedTextFieldDelegate.swift in Sources */,
+				8E8FCC43279C05D900EC83EC /* Bundle+TinkoffASDKUI.swift in Sources */,
+				8E8FCC3B279C052B00EC83EC /* PaymentService.swift in Sources */,
+				8E8FCC12279C031000EC83EC /* SizeImageProcessor.swift in Sources */,
+				8E8FCBCE279C029F00EC83EC /* Extension+UIColor.swift in Sources */,
+				8E8FCBD1279C02C200EC83EC /* UIViewController+Dismiss.swift in Sources */,
 				2C8720E4247D639100B2AE14 /* AcquiringLocalizable.swift in Sources */,
+				8E8FCC35279C04FE00EC83EC /* PullableContainerContent.swift in Sources */,
+				8E8FCC3E279C059400EC83EC /* ReusableCell.swift in Sources */,
 				2C572D1523B39066004B4619 /* ScrollableTableViewCell.swift in Sources */,
+				8E8FCBCF279C029F00EC83EC /* UIColor+Dynamic.swift in Sources */,
+				8E8FCC2C279C04FE00EC83EC /* PullableContainerPanGestureDragHandler.swift in Sources */,
+				8E8FCBF7279C02EE00EC83EC /* SBPBankListHeaderView.swift in Sources */,
 				2C193C5F243E216D00058DDC /* StatusTableViewCell.swift in Sources */,
+				8E8FCC13279C031000EC83EC /* ImageProcessor.swift in Sources */,
+				8E8FCBF4279C02EE00EC83EC /* SBPBankListViewController.swift in Sources */,
+				8E8FCBF6279C02EE00EC83EC /* SBPBankCell.swift in Sources */,
 				2C1CF27224646751007C96E6 /* PSLogoTableViewCell.swift in Sources */,
 				2CB0984723CC520E00EE13A7 /* InputMaskBuilder.swift in Sources */,
+				8E8FCC2B279C04FE00EC83EC /* PullableContainerScrollDragHandler.swift in Sources */,
+				8E8FCBFE279C02EE00EC83EC /* SBPBankAppAvailabilityChecker.swift in Sources */,
+				8E8FCBFA279C02EE00EC83EC /* SBPPaymentService.swift in Sources */,
+				8E8FCC32279C04FE00EC83EC /* DimmingPresentationController.swift in Sources */,
+				8E8FCBF1279C02EE00EC83EC /* SBPNoAvailableBanksView.swift in Sources */,
+				8E8FCBF2279C02EE00EC83EC /* LoadingViewController.swift in Sources */,
 				2CB765182451D53800654795 /* PopUpViewContoller.swift in Sources */,
+				8E8FCBEE279C02EE00EC83EC /* SBPAssembly.swift in Sources */,
+				8E8FCBF5279C02EE00EC83EC /* SBPBankListView.swift in Sources */,
 				2CFE99C224758F010077AAB4 /* ConfirmViewController.swift in Sources */,
+				8E8FCC2D279C04FE00EC83EC /* PullableContainerViewController.swift in Sources */,
+				8E8FCBF9279C02EE00EC83EC /* SBPUrlPaymentViewController.swift in Sources */,
 				2CB0983E23CC520E00EE13A7 /* InputMaskTextFieldDelegate.swift in Sources */,
 				2C572D1423B39066004B4619 /* AmountTableViewCell.swift in Sources */,
 				2C9C7EF0239FCD2A00DE4071 /* WebViewController.swift in Sources */,
 				2CB7651C2451DD9B00654795 /* AddNewCardViewController.swift in Sources */,
 				2C73726323D0867D005584EB /* ButtonInputAccessoryView.swift in Sources */,
+				8E8FCC34279C04FE00EC83EC /* DimmingView.swift in Sources */,
 				2CB5EE472445BCD100A76E84 /* PageStatusListCollectionViewCell.swift in Sources */,
 				2C572D1223B39066004B4619 /* ButtonTableViewCell.swift in Sources */,
 				2CC2EEA2245043F10071AAF4 /* AddCardTableViewCell.swift in Sources */,
 				2CB0983D23CC520E00EE13A7 /* ValueState.swift in Sources */,
+				8E8FCBF3279C02EE00EC83EC /* SBPBankListTableManager.swift in Sources */,
+				8E8FCC29279C04FE00EC83EC /* PullableContainerDragHandler.swift in Sources */,
+				8E8FCBFB279C02EE00EC83EC /* SBPBanksService.swift in Sources */,
 				2CCEF0A123C871AD00CD3D44 /* PaymentCardCollectionViewCell.swift in Sources */,
+				8E8FCBFF279C02EE00EC83EC /* BigButtonContainer.swift in Sources */,
 				2C193C57243E192C00058DDC /* QRCodeViewController.swift in Sources */,
 				2C83805023AA4BC300BEA31E /* AcquiringUISDK.swift in Sources */,
 				2CB0984023CC520E00EE13A7 /* EOLState.swift in Sources */,
 				2CB0985123CC666400EE13A7 /* InputCardRequisitesProtocols.swift in Sources */,
+				8E8FCC31279C04FE00EC83EC /* NotchView.swift in Sources */,
 				2C9C7EF8239FEFE300DE4071 /* PullUpPresentationController.swift in Sources */,
 				2CB0983C23CC520E00EE13A7 /* CaretStringIterator.swift in Sources */,
 				2CB0984323CC520E00EE13A7 /* FormatSanitizer.swift in Sources */,
 				2CB0984223CC520E00EE13A7 /* CaretString.swift in Sources */,
+				8E8FCC2F279C04FE00EC83EC /* PullableContainerHeader.swift in Sources */,
+				8E8FCC42279C05D900EC83EC /* UIViewController+TopPresented.swift in Sources */,
 				2C4923E6244EE34F002DAEFB /* InputCardCVCRequisitesController.swift in Sources */,
 				2CCEF0A723C88C6C00CD3D44 /* CenterFlowLayout.swift in Sources */,
 				2C46840724726AFA0067DA48 /* InputEmailController.swift in Sources */,
+				8E8FCC30279C04FE00EC83EC /* PassthroughView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

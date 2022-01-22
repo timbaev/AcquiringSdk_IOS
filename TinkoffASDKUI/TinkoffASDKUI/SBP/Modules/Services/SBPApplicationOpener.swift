@@ -17,7 +17,7 @@
 //  limitations under the License.
 //
 
-
+import UIKit
 import TinkoffASDKCore
 
 public protocol SBPApplicationOpener {

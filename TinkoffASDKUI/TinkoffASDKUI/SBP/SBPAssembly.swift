@@ -17,7 +17,7 @@
 //  limitations under the License.
 //
 
-
+import UIKit
 import TinkoffASDKCore
 
 final class SBPAssembly {
