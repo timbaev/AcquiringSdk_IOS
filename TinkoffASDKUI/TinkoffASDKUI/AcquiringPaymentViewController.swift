@@ -397,9 +397,10 @@ extension AcquiringPaymentViewController: UITableViewDataSource {
                 return cell
             }
 
-        case let .waitingPaymentURL(url, _):
-            if let cell = tableView.dequeueReusableCell(withIdentifier: "QRCodeImageTableViewCell") as? QRCodeImageTableViewCell {
-                cell.imageViewIcon?.image = UIImage(qr: url)
+        case let .waitingPaymentURL(_, status):
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "StatusTableViewCell") as? StatusTableViewCell {
+                cell.labelStatus.text = status
+                cell.buttonUpdate.isHidden = true
 
                 return cell
             }

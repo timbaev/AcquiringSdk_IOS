@@ -42,6 +42,7 @@ final class SBPUrlPaymentViewController: UIViewController, PullableContainerScro
     }
     
     var noBanksAppAvailable: ((UIViewController) -> Void)?
+    var didBankOpen: ((_ sbpURL: URL) -> Void)?
     
     var contentHeightDidChange: ((PullableContainerContent) -> Void)?
     
@@ -231,9 +232,15 @@ private extension SBPUrlPaymentViewController {
         
         do {
             try sbpApplicationService.openSBPUrl(url, in: bank, completion: { [weak self] _ in
-                self?.dismiss(animated: true, completion: nil)
-                if let paymentStatus = self?.paymentStatusResponse {
-                    self?.completion?(.success(paymentStatus))
+                guard let self = self else {
+                    return
+                }
+
+                self.didBankOpen?(url)
+                self.dismiss(animated: true, completion: nil)
+
+                if let paymentStatus = self.paymentStatusResponse {
+                    self.completion?(.success(paymentStatus))
                 }
             })
         } catch {

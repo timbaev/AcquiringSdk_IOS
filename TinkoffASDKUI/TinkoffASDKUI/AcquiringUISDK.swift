@@ -385,7 +385,7 @@ public class AcquiringUISDK: NSObject {
 
     public func urlSBPPaymentViewController(paymentSource: PaymentSource,
                                             configuration: AcquiringViewConfiguration,
-                                            completionHandler: PaymentCompletionHandler?) -> UIViewController {
+                                            completionHandler: PaymentCompletionHandler? = nil) -> UIViewController {
         let urlPaymentViewController = sbpAssembly.urlPaymentViewController(paymentSource: paymentSource,
                                                                             configuration: configuration,
                                                                             completionHandler: completionHandler)
@@ -401,6 +401,19 @@ public class AcquiringUISDK: NSObject {
                                                               backgroundColor: UIColor.asdk.dynamic.background.elevation1)
                 presentingViewController?.present(navigationController, animated: true, completion: nil)
             })
+        }
+
+        urlPaymentViewController.didBankOpen = { [weak self] sbpURL in
+            guard case .paymentId(let paymentID) = paymentSource else {
+                return
+            }
+
+            self?.sbpWaitingIncominPayment(
+                paymentId: paymentID,
+                source: sbpURL.absoluteString,
+                sourceType: .url,
+                completionHandler: completionHandler
+            )
         }
         
         return pullableContainerViewController
@@ -525,15 +538,31 @@ public class AcquiringUISDK: NSObject {
                     if paymentInvoiceSource == .url, let url = URL(string: qrCodeResponse.qrCodeData) {
                         if UIApplication.shared.canOpenURL(url) {
                             UIApplication.shared.open(url, options: [:]) { _ in
-                                self?.sbpWaitingIncominPayment(paymentId: paymentId, source: qrCodeResponse.qrCodeData, sourceType: paymentInvoiceSource)
-                                self?.acquiringView?.changedStatus(.paymentWaitingSBPUrl(url: qrCodeResponse.qrCodeData, status: "Выбор источника оплаты"))
+                                self?.sbpWaitingIncominPayment(
+                                    paymentId: paymentId,
+                                    source: qrCodeResponse.qrCodeData,
+                                    sourceType: paymentInvoiceSource,
+                                    completionHandler: self?.onPaymentCompletionHandler
+                                )
+
+                                self?.acquiringView?.changedStatus(
+                                    .paymentWaitingSBPUrl(
+                                        url: qrCodeResponse.qrCodeData,
+                                        status: "Выбор источника оплаты"
+                                    )
+                                )
                             }
                         } else {
                             let activityViewController = UIActivityViewController(activityItems: [url], applicationActivities: [])
                             activityViewController.excludedActivityTypes = [.postToWeibo, .print, .assignToContact, .saveToCameraRoll, .addToReadingList, .postToFlickr, .postToVimeo, .postToTencentWeibo, .airDrop, .openInIBooks, .markupAsPDF]
 
                             activityViewController.completionWithItemsHandler = { (_: UIActivity.ActivityType?, _: Bool, _: [Any]?, _: Error?) in
-                                self?.sbpWaitingIncominPayment(paymentId: paymentId, source: qrCodeResponse.qrCodeData, sourceType: paymentInvoiceSource)
+                                self?.sbpWaitingIncominPayment(
+                                    paymentId: paymentId,
+                                    source: qrCodeResponse.qrCodeData,
+                                    sourceType: paymentInvoiceSource,
+                                    completionHandler: self?.onPaymentCompletionHandler
+                                )
                             }
 
                             self?.acquiringView?.presentVC(activityViewController, animated: true, completion: {
@@ -541,7 +570,12 @@ public class AcquiringUISDK: NSObject {
                             })
                         }
                     } else {
-                        self?.sbpWaitingIncominPayment(paymentId: paymentId, source: qrCodeResponse.qrCodeData, sourceType: paymentInvoiceSource)
+                        self?.sbpWaitingIncominPayment(
+                            paymentId: paymentId,
+                            source: qrCodeResponse.qrCodeData,
+                            sourceType: paymentInvoiceSource,
+                            completionHandler: self?.onPaymentCompletionHandler
+                        )
                     }
                 }
 
@@ -565,9 +599,13 @@ public class AcquiringUISDK: NSObject {
         }
     }
 
-    private func sbpWaitingIncominPayment(paymentId: Int64, source: String, sourceType: PaymentInvoiceSBPSourceType) {
+    private func sbpWaitingIncominPayment(
+        paymentId: Int64,
+        source: String,
+        sourceType: PaymentInvoiceSBPSourceType,
+        completionHandler: PaymentCompletionHandler?
+    ) {
         let completionStatus: [PaymentStatus] = [.confirmed, .checked3ds, .refunded, .reversed, .rejected]
-        let completionHandler = onPaymentCompletionHandler
 
         checkPaymentStatus = PaymentStatusServiceProvider(sdk: acquiringSdk, paymentId: paymentId)
         checkPaymentStatus?.onStatusUpdated = { [weak self] fetchStatus in
