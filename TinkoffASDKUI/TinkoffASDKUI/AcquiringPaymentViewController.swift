@@ -400,6 +400,7 @@ extension AcquiringPaymentViewController: UITableViewDataSource {
         case let .waitingPaymentURL(_, status):
             if let cell = tableView.dequeueReusableCell(withIdentifier: "StatusTableViewCell") as? StatusTableViewCell {
                 cell.labelStatus.text = status
+                cell.labelStatus.isHidden = false
                 cell.buttonUpdate.isHidden = true
 
                 return cell
