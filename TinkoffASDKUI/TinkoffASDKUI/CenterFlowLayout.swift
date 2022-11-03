@@ -107,14 +107,25 @@ class CollectionViewCenteredFlowLayout: UICollectionViewFlowLayout {
                 guard let section = group.first?.indexPath.section else {
                     return group
                 }
+
                 let evaluatedSectionInset = evaluatedSectionInsetForSection(at: section)
                 let evaluatedMinimumInteritemSpacing = evaluatedMinimumInteritemSpacingForSection(at: section)
-                var origin = (collectionView.bounds.width + evaluatedSectionInset.left - evaluatedSectionInset.right - group.reduce(0) { $0 + $1.frame.size.width } - CGFloat(group.count - 1) * evaluatedMinimumInteritemSpacing) / 2
+                let groupWidth = group.reduce(0) { $0 + $1.frame.size.width }
+
+                var origin = (
+                    collectionView.bounds.width
+                        + evaluatedSectionInset.left
+                        - evaluatedSectionInset.right
+                        - groupWidth
+                        - CGFloat(group.count - 1)
+                        * evaluatedMinimumInteritemSpacing
+                ) / 2
+
                 // we reposition each element of a group
-                return group.map {
-                    $0.frame.origin.x = origin
-                    origin += $0.frame.size.width + evaluatedMinimumInteritemSpacing
-                    return $0
+                return group.map { group -> UICollectionViewLayoutAttributes in
+                    group.frame.origin.x = origin
+                    origin += group.frame.size.width + evaluatedMinimumInteritemSpacing
+                    return group
                 }
             }
         } else {
@@ -139,12 +150,22 @@ class CollectionViewCenteredFlowLayout: UICollectionViewFlowLayout {
                 }
                 let evaluatedSectionInset = evaluatedSectionInsetForSection(at: section)
                 let evaluatedMinimumInteritemSpacing = evaluatedMinimumInteritemSpacingForSection(at: section)
-                var origin = (collectionView.bounds.height + evaluatedSectionInset.top - evaluatedSectionInset.bottom - group.reduce(0) { $0 + $1.frame.size.height } - CGFloat(group.count - 1) * evaluatedMinimumInteritemSpacing) / 2
+                let groupHeight = group.reduce(0) { $0 + $1.frame.size.height }
+
+                var origin = (
+                    collectionView.bounds.height
+                        + evaluatedSectionInset.top
+                        - evaluatedSectionInset.bottom
+                        - groupHeight
+                        - CGFloat(group.count - 1)
+                        * evaluatedMinimumInteritemSpacing
+                ) / 2
+
                 // we reposition each element of a group
-                return group.map {
-                    $0.frame.origin.y = origin
-                    origin += $0.frame.size.height + evaluatedMinimumInteritemSpacing
-                    return $0
+                return group.map { group -> UICollectionViewLayoutAttributes in
+                    group.frame.origin.y = origin
+                    origin += group.frame.size.height + evaluatedMinimumInteritemSpacing
+                    return group
                 }
             }
         }
